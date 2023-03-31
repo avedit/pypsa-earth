@@ -148,6 +148,7 @@ def build_demand_profiles(
             return pd.DataFrame({group.index[0]: l})
         else:
             shapes_cntry = shapes.loc[shapes.country == cntry]
+            print(shapes_cntry.columns)
             transfer = vtransfer.Shapes2Shapes(
                 group, shapes_cntry.geometry, normed=False
             ).T.tocsr()

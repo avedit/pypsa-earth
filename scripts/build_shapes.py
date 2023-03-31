@@ -712,8 +712,8 @@ def add_population_data(
     year=2020,
     update=False,
     out_logging=False,
-    nprocesses=2,
-    nchunks=2,
+    nprocesses=5,
+    nchunks=5,
     disable_progressbar=False,
 ):
     """
